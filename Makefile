@@ -25,7 +25,7 @@ MINOR_VERSION = $(shell grep "define ONI_VERSION_MINOR" Include/OniVersion.h | c
 MAINT_VERSION = $(shell grep "define ONI_VERSION_MAINT" Include/OniVersion.h | cut -f 2)
 
 ifeq ("$(OSTYPE)","Darwin")
-	OS_NAME = MacOSX
+	OS_NAME = MacOS
 else
 	OS_NAME = Linux
 endif
